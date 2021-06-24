@@ -7,9 +7,14 @@ import store from './redux/store'
 function App() {
   return (
      <Provider store = {store}>
-         <div className="App">
+         <div className="container">
+           <div className="app-wrapper">
             <CakeContainer/>
+            </div>
+            
+            <div className="app-wrapper">
             <IcecreamContainer />
+            </div>
          </div>
     </Provider>
   );
